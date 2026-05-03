@@ -225,17 +225,14 @@ body {
 
 
 <script>
-    const savedText1 = localStorage.getItem('sharedText1');
-    document.getElementById('displayArea1').innerText = savedText1;
-
-    const savedText2 = localStorage.getItem('sharedText2');
-    document.getElementById('displayArea2').innerText = savedText2;
-
-    const savedText3 = localStorage.getItem('sharedText3');
-    document.getElementById('displayArea3').innerText = savedText3;
-
-    const savedText4 = localStorage.getItem('sharedText4');
-    document.getElementById('displayArea4').innerText = savedText4;
+    
+['sharedText1', 'sharedText2', 'sharedText3', 'sharedText4'].forEach((key, index) => {
+  const savedText = localStorage.getItem(key);
+  const displayArea = document.getElementById(`displayArea${index + 1}`);
+  if (displayArea) {
+    displayArea.innerText = savedText || '';
+  }
+});
 
 </script>
 
