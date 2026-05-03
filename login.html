@@ -215,29 +215,26 @@ form {
                 </label>
                 <br>
                 <br>
-            <button onclick="saveData()" type="submit" class="submit-btn" style="border: 2px solid #a351c9; padding: 5px; border-radius: 4px; width: 400px; background-color: #a351c9;"><a href="index.htm" style="color: #ffe5fe; text-decoration: none ;">Log in</a></button>
+            <button type="submit" class="submit-btn" style="border: 2px solid #a351c9; padding: 5px; border-radius: 4px; width: 400px; background-color: #a351c9;"><a href="index.htm" style="color: #ffe5fe; text-decoration: none ;">Log in</a></button>
                 </div>
 
+
+
 <script>
-    function saveData() {
-        const val1 = document.getElementById('inputFieldname').value;
-        localStorage.setItem('sharedText1', val);
-        window.location.href = 'profile.html';
+   function saveData() {
+    const val1 = document.getElementById('inputFieldname').value;
+    const val2 = document.getElementById('inputFieldpass').value;
+    const val3 = document.getElementById('inputFieldconnumber').value;
+    const val4 = document.getElementById('inputFieldemail').value;
 
-        const val2 = document.getElementById('inputFieldpass').value;
-        localStorage.setItem('sharedText2', val);
-        window.location.href = 'profile.html';
+    localStorage.setItem('sharedText1', val1);
+    localStorage.setItem('sharedText2', val2);
+    localStorage.setItem('sharedText3', val3);
+    localStorage.setItem('sharedText4', val4);
 
-        const val3 = document.getElementById('inputFieldconnumber').value;
-        localStorage.setItem('sharedText3', val);
-        window.location.href = 'profile.html';
-
-        const val4 = document.getElementById('inputFieldemail').value;
-        localStorage.setItem('sharedText4', val);
-        window.location.href = 'profile.html';
-    }
+    window.location.href = 'profile.html';
+}
 </script>
-
         </div>
         </div>
 
