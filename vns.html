@@ -174,14 +174,55 @@ body {
 }
 
 .flex-container {
-  display: block;
-  gap: 5px; 
+  display:inline-block;
+  gap: 50px; 
+  margin-bottom: 25px;
+  margin-right: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  height: 190px;
+  height: 250px;
+  width: 300px;
   border-radius: 10px;
 }
 .flex-container section {
   flex: 1;
+}
+
+.vn{
+    display:inline-block;
+    gap: 50px; 
+    height: 130px;
+    border-radius: 10px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap; 
+  list-style: none;
+  padding: 0;
+  gap: 10px;  
+}
+
+#searchInput {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 50px;
+  width: 1000px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #a351c9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 50px;
+}
+
+button:hover {
+  background-color: #431558;
 }
 
 </style>
@@ -232,11 +273,34 @@ body {
 
 
 <main class="content">
-<div class="flex-container">
 
-<a href="pflvn.html">
+<br>
+<br>
+
+<search>
+  <form id="searchForm">
+    <input type="search" id="searchInput" placeholder="Search items..." aria-label="Search through site content">
+    <button type="submit">Search</button>
+  </form>
+</search>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<ul id="vnlist">
+
+
+
+<li>
+<div class="flex-container">
+<a href="pflvn.html" style="text-decoration: none; color:#560883;">
 <section id="works">
-        <h2 class="h2"><img src="main.png"></h2>
+        <h2 class="h2"><img src="pfl.png" class="vn"></h2>
         <div class="works-gallery">
 
             <div class="work-item">
@@ -245,11 +309,13 @@ body {
 </section>
 </a>
 </div>
+</li>
 
+<li>
 <div class="flex-container">
-<a href="magiartvn.html">
+<a href="magiartvn.html" style="text-decoration: none; color:#560883;">
 <section id="works">
-    <h2 class="h2"><img src="main.png"></h2>
+    <h2 class="h2"><img src="main.png" class="vn"></h2>
         <div class="works-gallery">
 
             <div class="work-item">
@@ -258,11 +324,13 @@ body {
 </section>
 </a>
 </div>
+</li>
 
+<li>
 <div class="flex-container">
-<a href="ponyhisvn.html">
+<a href="ponyhisvn.html" style="text-decoration: none; color:#560883;">
 <section id="works">
-        <h2 class="h2"><img src="main.png"></h2>
+        <h2 class="h2"><img src="main.png" class="vn"></h2>
         <div class="works-gallery">
 
             <div class="work-item">
@@ -270,11 +338,13 @@ body {
 </section>
 </a>
 </div>
+</li>
 
+<li>
 <div class="flex-container">
-<a href="anicare.html">
+<a href="anicare.html" style="text-decoration: none; color:#560883;">
 <section id="works">
-        <h2 class="h2"><img src="main.png"></h2>
+        <h2 class="h2"><img src="main.png" class="vn"></h2>
         <div class="works-gallery">
 
             <div class="work-item">
@@ -282,11 +352,13 @@ body {
 </section>
 </a>
 </div>
+</li>
 
+<li>
 <div class="flex-container">
-<a href="eurolangvn.html">
+<a href="eurolangvn.html" style="text-decoration: none; color:#560883;">
 <section id="works">
-        <h2 class="h2"><img src="main.png"></h2>
+        <h2 class="h2"><img src="main.png" class="vn"></h2>
         <div class="works-gallery">
 
             <div class="work-item">
@@ -294,11 +366,13 @@ body {
 </section>
 </a>
 </div>
+</li>
 
+<li>
 <div class="flex-container">
-<a href="potionsvn.html">
+<a href="potionsvn.html" style="text-decoration: none; color:#560883;">
 <section id="works">
-        <h2 class="h2"><img src="main.png"></h2>
+        <h2 class="h2"><img src="main.png" class="vn"></h2>
         <div class="works-gallery">
 
             <div class="work-item">
@@ -306,11 +380,13 @@ body {
 </section>
 </a>
 </div>
+</li>
 
+<li>
 <div class="flex-container">
-<a href="astronomvn.html">
+<a href="astronomvn.html" style="text-decoration: none; color:#560883;">
 <section id="works">
-        <h2 class="h2"><img src="main.png"></h2>
+        <h2 class="h2"><img src="main.png" class="vn"></h2>
         <div class="works-gallery">
 
             <div class="work-item">
@@ -318,11 +394,13 @@ body {
 </section>
 </a>
 </div>
+</li>
 
+<li>
 <div class="flex-container">
-<a href="alchemyvn.html">
+<a href="alchemyvn.html" style="text-decoration: none; color:#560883;">
 <section id="works">
-        <h2 class="h2"><img src="main.png"></h2>
+        <h2 class="h2"><img src="main.png" class="vn"></h2>
         <div class="works-gallery">
 
             <div class="work-item">
@@ -330,11 +408,13 @@ body {
 </section>
 </a>
 </div>
+</li>
 
+<li>
 <div class="flex-container">
-<a href="musicvn.html">
+<a href="musicvn.html" style="text-decoration: none; color:#560883;">
 <section id="works">
-        <h2 class="h2"><img src="main.png"></h2>
+        <h2 class="h2"><img src="main.png" class="vn"></h2>
         <div class="works-gallery">
 
             <div class="work-item">
@@ -342,8 +422,32 @@ body {
 </section>
 </a>
 </div>
+</li>
 
 </div>
+</ul>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const itemList = document.getElementById('vnlist');
+const items = itemList.getElementsByTagName('li');
+
+searchInput.addEventListener('keyup', function() {
+  const filter = searchInput.value.toLowerCase(); // Get user input and make it lowercase
+
+  for (let i = 0; i < items.length; i++) {
+    const textValue = items[i].textContent || items[i].innerText;
+    
+    // If the item text matches the search, show it; otherwise, hide it
+    if (textValue.toLowerCase().indexOf(filter) > -1) {
+      items[i].style.display = "";
+    } else {
+      items[i].style.display = "none";
+    }
+  }
+});
+</script>
+
 </main>
 
 </body>
