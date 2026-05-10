@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Log In Page || School of Friendship </title>
+</head>
 <body>
 <style>
 body {
@@ -97,10 +98,17 @@ body {
   background-color: #717171;
 }
 
+.form-container {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;     /* Vertical centering */
+  min-height: 100vh;       /* Full viewport height */
+}
+
 form {
-  width: 500px;
-  margin-left: 95%;
-  margin-right: auto;
+  width: 100%;
+  max-width: 400px; /* Ensures it doesn't get too wide on desktop */
+  padding: 5px;
 }
 
 form {
